@@ -12,7 +12,7 @@
         'multiple'=>$_POST['multiple'],
         'start'=>date("Y-m-d"),
         //今天start今天開始 起始日
-        'end'=>date("Y-m-d",strtotime("+30 days")),
+        'end'=>date("Y-m-d",strtotime("+100 days")),
         //把今天的時間加30天(這裡的時間可自行調整),轉成秒數(時間的格式)丟給date時間函數去處理執行 
     ];
 
