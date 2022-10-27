@@ -6,8 +6,8 @@
     session_start(); //這兩串一定要,很重要;
     date_default_timezone_set('Asia/Taipei'); //時區;
     function pdo(){
-        $dsn="mysql:host=localhost;charset=utf8;dbname=votehw";//這個要到220記得註掉;
-        return new PDO($dsn,'root',''); 
+        //$dsn="mysql:host=localhost;charset=utf8;dbname=votehw";//這個要到220記得註掉;
+        //return new PDO($dsn,'root',''); 
         //連線到我PHPmyadmin資料庫
         
         //先宣告全部函式都會用到的資料庫連線設定及建立PDO資料庫物件
@@ -15,8 +15,8 @@
         //回傳一個新的pdo連線物件
 
         //屆時要輸入到220教室的如下:
-        //$dsn="mysql:host=localhost;charset=utf8;dbname=s1110220";
-        //return new PDO($dsn,'s1110220','s1110220');
+        $dsn="mysql:host=localhost;charset=utf8;dbname=s1110220";
+        return new PDO($dsn,'s1110220','s1110220');
 
     }
 
